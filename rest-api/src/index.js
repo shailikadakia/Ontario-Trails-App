@@ -10,12 +10,7 @@ app.use(express.json());
 const API_V1_ROOT = "/api/v1";
 
 
-app.use(`${API_V1_ROOT}/trails`, (_, res) => {
-    return res.json(data.features).status(200);
-});
-
-
-app.use(`${API_V1_ROOT}/trails/:id`, (req, res) => {
+app.get(`${API_V1_ROOT}/trails/:id`, (req, res) => {
     const id = parseInt(req.params.id);
     const selection = data.features.find(trail => trail.properties.OGF_ID === id);
     if (selection) {
@@ -23,6 +18,12 @@ app.use(`${API_V1_ROOT}/trails/:id`, (req, res) => {
     }
     return res.json({error: `Trail with ID ${id} not found!`}).status(404);
 });
+
+
+app.get(`${API_V1_ROOT}/trails`, (_, res) => {
+    return res.json(data.features).status(200);
+});
+
 
 
 // Does not persist
