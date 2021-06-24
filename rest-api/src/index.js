@@ -25,11 +25,13 @@ app.get(`${API_V1_ROOT}/trails`, (_, res) => {
 });
 
 
-
-// Does not persist
-// Also not tested yet
+// Does not persist across multiple runs
 app.post(`${API_V1_ROOT}/trails`, (req, res) => {
-    const trail = req.body;
+    const trail = {
+        type: "Feature",
+        properties: req.body,
+    };
+    trail.properties.OGF_ID = parseInt(trail.properties.OGF_ID);
     data.features.push(trail);
     return res.json(trail).status(201);
 });
