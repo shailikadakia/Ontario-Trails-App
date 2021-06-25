@@ -1,0 +1,29 @@
+query {
+  trail(OGF_ID: "302002112") {
+    OGF_ID
+    TRAIL_NAME
+  }
+  CustomTrail: trail(OGF_ID: "1111") {
+    OGF_ID
+    TRAIL_NAME
+  }
+  trails {
+    X
+    Y
+		OGF_ID
+    TRAIL_NAME
+  }
+}
+
+
+mutation {
+  createTrail(input: {OGF_ID: 1111 X: 1, Y:2, TRAIL_NAME: "Debug Trail", TRAIL_ASSOCIATION: "Debug Association"}) {
+    trail {
+      OGF_ID
+      X
+      Y
+      TRAIL_NAME
+      TRAIL_ASSOCIATION
+    }
+  }
+}
