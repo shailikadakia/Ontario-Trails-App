@@ -3,10 +3,13 @@ import MaterialTable from 'material-table';
 
 export const Trail = () => {
     const [data, setData] = useState([])
+
     const columns = [
-        {title: 'ID', field: 'OGF_ID'},
         {title: 'Name', field: 'TRAIL_NAME'},
-        {title: 'Email', field: 'email'}
+        {title: 'Association', field: 'TRAIL_ASSOCIATION'},
+        {title: 'Activity', field: 'ACTIVITY'},
+        {title: 'Description', field: 'DESCRIPTION'},
+        {title: 'Environmental Concerns', field: 'ENVIRONMENTAL_CONCERNS'},
     ]
     // This *should* work, but may break
     useEffect(() => {
