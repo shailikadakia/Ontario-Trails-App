@@ -1,6 +1,6 @@
 import React from 'react';
 
-const TrailDetails = ({ association, motorization, difficulty }) => {
+const TrailDetails = ({ id, name, association, motorization, difficulty }) => {
 
 
 

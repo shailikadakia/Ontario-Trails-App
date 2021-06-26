@@ -19,6 +19,8 @@ function TrailListItem({ id, name , association, motorization, difficulty}) {
             {
                 expand && (
                     <TrailDetails
+                        id={id}
+                        name={name}
                         association={association}
                         motorization={motorization}
                         difficulty={difficulty}
