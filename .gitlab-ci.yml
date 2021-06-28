@@ -1,4 +1,6 @@
-heroku-deploy-job:
-    - echo "Deploying to Heroku (hopefully)"
-    - git remote add heroku https://heroku:$HEROKU_API_KEY@git.heroku.com/ontario-trail-app.git
-    - git push -f heroku HEAD:master
+deploy-prod:
+    stage: deploy
+    script: 
+        - echo "Deploying to Heroku (hopefully)"
+        - git remote add heroku https://heroku:$HEROKU_API_KEY@git.heroku.com/ontario-trail-app.git
+        - git push -f heroku HEAD:master
