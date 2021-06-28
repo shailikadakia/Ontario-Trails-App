@@ -1,6 +1,7 @@
 import express from "express";
 import cors from "cors";
 import data from "../data";
+import uncrowdedData from "../uncrowded-data.js";
 
 const app = express();
 
@@ -33,6 +34,10 @@ app.post(`${API_V1_ROOT}/trails`, (req, res) => {
     trail.OGF_ID = parseInt(trail.OGF_ID);
     data.push(trail);
     return res.json(trail).status(201);
+});
+
+app.get(`${API_V1_ROOT}/uncrowded`, (req, res) => {
+    res.json(uncrowdedData.trails);
 });
 
 

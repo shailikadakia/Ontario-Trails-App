@@ -13,9 +13,12 @@ export const Trail = () => {
          {title: 'Length in KM', field: 'LENGTH_KMS'},
         //{title: 'Environmental Concerns', field: 'ENVIRONMENTAL_CONCERNS'},
     ]
-    // This *should* work, but may break
+
     useEffect(() => {
-        fetch('http://localhost:4000/api/v1/trails') //data source
+        // Use pre-defined api url if it exists
+        // Use localhost otherwise (assume we're in dev)
+        const URL_ROOT = process.env.REACT_APP_API_URL_ROOT || 'http://localhost:4000';
+        fetch(`${URL_ROOT}/api/v1/trails`) //data source
                  .then(response => response.json())
                  .then(response => {
                      console.log(response)

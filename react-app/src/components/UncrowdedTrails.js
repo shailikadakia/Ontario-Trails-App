@@ -6,9 +6,16 @@ import TrailCards from './TrailCards';
 const UncrowdedTrails = () => {
     const [trails, setTrails] = useState(null);
     const fetchTrails = () => {
-        fetch('http://localhost:3050/api/v1/uncrowded')
-            .then(res => res.json())
-            .then(res => setTrails(res));
+        // For backwards compat, still allow the standalone uncrowded api to be used
+        const URL_ROOT = process.env.REACT_APP_API_URL_ROOT || 'http://localhost:4000';
+            fetch(`${URL_ROOT}/api/v1/uncrowded`)
+                .then(res => res.json())
+                .then(res => setTrails(res))
+                .catch(() => {
+                    fetch('http://localhost:3050/api/v1/uncrowded')
+                        .then(res => res.json())
+                        .then(res => setTrails(res))       
+            });
     }
 
     useEffect(() => {
