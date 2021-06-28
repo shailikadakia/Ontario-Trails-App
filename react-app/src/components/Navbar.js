@@ -61,7 +61,7 @@ export default function Navbar() {
         </Toolbar>
       </AppBar> */}
       <header className='navbar'>
-        <div className='navbar__title navbar__item'>Ontario Trails</div>
+        <div className='navbar__title navbar__item'><Link className="link button" to="/">Ontario Trails</Link></div>
         <div className='navbar__item'><Link className="link button" to="/trails">Trails</Link></div>
          <div className='navbar__item'><Link className="link button" to="/uncrowded">Uncrowded Trails</Link> </div>     
     </header>
