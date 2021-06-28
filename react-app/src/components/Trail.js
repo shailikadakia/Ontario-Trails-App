@@ -10,7 +10,7 @@ export const Trail = () => {
         {title: 'Name', field: 'TRAIL_NAME'},
         {title: 'Association', field: 'TRAIL_ASSOCIATION'},
         {title: 'Activity', field: 'ACTIVITY'},
-         {title: 'Description', field: 'DESCRIPTION'},
+         {title: 'Length in KM', field: 'Length_KMS'},
         //{title: 'Environmental Concerns', field: 'ENVIRONMENTAL_CONCERNS'},
     ]
     // This *should* work, but may break
