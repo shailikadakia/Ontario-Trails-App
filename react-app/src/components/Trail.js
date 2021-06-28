@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import MaterialTable from 'material-table';
 
+
+
 export const Trail = () => {
     const [data, setData] = useState([])
 
@@ -8,8 +10,8 @@ export const Trail = () => {
         {title: 'Name', field: 'TRAIL_NAME'},
         {title: 'Association', field: 'TRAIL_ASSOCIATION'},
         {title: 'Activity', field: 'ACTIVITY'},
-        // {title: 'Description', field: 'DESCRIPTION'},
-        {title: 'Environmental Concerns', field: 'ENVIRONMENTAL_CONCERNS'},
+         {title: 'Description', field: 'DESCRIPTION'},
+        //{title: 'Environmental Concerns', field: 'ENVIRONMENTAL_CONCERNS'},
     ]
     // This *should* work, but may break
     useEffect(() => {
@@ -38,7 +40,7 @@ export const Trail = () => {
                     {rowData.DESCRIPTION}
                 </>
             )}
-            onRowClick={(_event, _rowData, togglePanel) => togglePanel()}
+            //onRowClick={(_event, _rowData, togglePanel) => togglePanel()}
             />
         </div>
     )

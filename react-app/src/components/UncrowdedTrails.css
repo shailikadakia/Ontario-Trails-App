@@ -1,0 +1,33 @@
+.list{
+    background-color:  rgb(243, 193, 99);
+    
+
+}
+.listname{
+    margin: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+     text-decoration: none;
+     color: black;
+   
+
+}
+.listname:hover{
+    color: gray;
+}
+
+
+
+
+.description{
+    padding: 20px;
+}
+.heading{
+    margin:0;
+    padding: 20px  10px;
+}
+.source{
+    font-size: 10px;
+    padding: 10px;
+}

@@ -1,5 +1,9 @@
 import React, { useState } from 'react';
 import TrailDetails from './TrailDetails';
+import './UncrowdedTrails.css';
+
+
+
 
 function TrailListItem({ id, name , association, motorization, difficulty}) {
 
@@ -15,7 +19,7 @@ function TrailListItem({ id, name , association, motorization, difficulty}) {
 
     return (
         <div>
-            <a href='#' onClick={handleExpand}>{name} (ID: {id})</a>
+            <a  className =' listname' href='#' onClick={handleExpand}>{name} (ID: {id}) </a>
             {
                 expand && (
                     <TrailDetails
