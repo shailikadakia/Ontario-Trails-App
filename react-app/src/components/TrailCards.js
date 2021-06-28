@@ -62,9 +62,11 @@ const imagePath = imageData.filter(obj => props.name.trim().toLowerCase() === ob
                 <Typography variant="body2" color="textSecondary" component="p">
                     Motorization: {props.motorization}
                 </Typography>
-                <Typography variant="body2" color="textSecondary" component="p">
-                    Difficulty: {props.difficulty}
-                </Typography>
+                {props.difficulty && 
+                    <Typography variant="body2" color="textSecondary" component="p">
+                        Difficulty: {props.difficulty}
+                    </Typography>
+                }
                 </>
           
            )
