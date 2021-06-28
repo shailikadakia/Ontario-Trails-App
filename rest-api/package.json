@@ -16,5 +16,13 @@
     "esm": "^3.2.25",
     "express": "^4.17.1",
     "nodemon": "^2.0.7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.uwaterloo.ca/a256liu/ontario-trail-app.git"
+  },
+  "engines": {
+    "node": "^14.16.1",
+    "npm": "^7.19.0"
   }
 }
