@@ -25,7 +25,7 @@ const UncrowdedTrails = () => {
     return (
         <div className='list'>
             <h2 className='heading'>Uncrowded Trails</h2>
-            <p className='description'>Below is a list of some trails with low amounts of traffic and crowds!</p>
+            <p className='detail'>Below is a list of some trails with low amounts of traffic and crowds!</p>
            <div className='listname'>
             {trails && 
                 trails.map(trail => (
@@ -49,9 +49,3 @@ const UncrowdedTrails = () => {
 
 export default UncrowdedTrails;
 
-/* <TrailListItem key={trail.properties.OGF_ID}
-                                                    id={trail.properties.OGF_ID}
-                                                    name={trail.properties.TRAIL_NAME}
-                                                    association={trail.properties.TRAIL_ASSOCIATION}
-                                                    motorization={trail.properties.ACTIVITY}
-                                                    difficulty={trail.properties.OTC_TRAIL_CHALLENGE}/>  */

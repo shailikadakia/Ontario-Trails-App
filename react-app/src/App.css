@@ -1,10 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+
+
+
+
 .App {
   text-align: center;
-  margin: 30px;
-  background-color: orange;
+  background-color: rgb(243, 193, 99);
+  height:100vh;
+  overflow: auto;
+  
+}
+.description{
+    font-size: 170%;
+    font-family: 'PT Sans', sans-serif;
+    text-align: left;
+    padding: 50px;
+    
+    
+    
+    
 }
 
-.App-logo {
+  .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
@@ -37,4 +54,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+}  

@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap');
 .list{
     background-color:  rgb(243, 193, 99);
-    
+    overflow: auto;
+
 
 }
 .listname{
@@ -10,6 +12,9 @@
     flex-wrap: wrap;
      text-decoration: none;
      color: black;
+     font-family: 'PT Sans', sans-serif;
+     text-align: left;
+
    
 
 }
@@ -20,14 +25,20 @@
 
 
 
-.description{
+.detail{
     padding: 20px;
+    font-family: 'PT Sans', sans-serif;
+    text-align: center;
+    font-size: 150%;
+    
 }
 .heading{
     margin:0;
     padding: 20px  10px;
+    font-family: 'PT Sans', sans-serif;
 }
 .source{
     font-size: 10px;
     padding: 10px;
+    font-family: 'PT Sans', sans-serif;
 }

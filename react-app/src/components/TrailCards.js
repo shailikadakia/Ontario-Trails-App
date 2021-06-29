@@ -38,10 +38,10 @@ const imagePath = imageData.filter(obj => props.name.trim().toLowerCase() === ob
   let image = require(`./images/${imagePath.image}`);
   return (
     <Card className={classes.root}>
-      <CardActionArea>
+      <CardActionArea onClick={handleExpand}>
          <CardMedia
           component="img"
-          alt="Contemplative Reptile"
+          alt= {props.name}
           height="140"
           image= { image.default } 
          />  
@@ -49,7 +49,7 @@ const imagePath = imageData.filter(obj => props.name.trim().toLowerCase() === ob
         <CardContent>
 
           <Typography gutterBottom variant="h5" component="h2">  
-          <a  className =' listname' href='#' onClick={handleExpand}> 
+          <a  className =' listname' href='#/'> 
             {props.name}
           </a> 
           </Typography> 
@@ -63,10 +63,13 @@ const imagePath = imageData.filter(obj => props.name.trim().toLowerCase() === ob
                     Motorization: {props.motorization}
                 </Typography>
                 {props.difficulty && 
+
                     <Typography variant="body2" color="textSecondary" component="p">
                         Difficulty: {props.difficulty}
                     </Typography>
                 }
+
+
                 </>
           
            )

@@ -19,7 +19,7 @@ function TrailListItem({ id, name , association, motorization, difficulty}) {
 
     return (
         <div>
-            <a  className =' listname' href='#' onClick={handleExpand}>{name} (ID: {id}) </a>
+            <a  className =' listname' href='/#' onClick={handleExpand}>{name} (ID: {id}) </a>
             {
                 expand && (
                     <TrailDetails

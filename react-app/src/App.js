@@ -10,14 +10,13 @@ function App() {
         <div className = "App"> 
             <Router>
             <Navbar />
-                {/* <div>
-                    <h1>App Name</h1>
-                    <Link to="/trails">Trails</Link>
-                    <Link to="/uncrowded">Uncrowded Trails</Link>
-                </div> */}
+              
                 <Switch>
                 <Route exact path='/'>
-                    <p>Welcome! On this site you can search for a variety of trails, and find out about the least busy and crowded trails in Ontario!</p>
+                  <div className ='description'>  <p>Welcome to Ontario Trails! Navigate through our site to  search through trails in the province of Ontario. </p>
+                    < p>To begin, search through all trails in the province under the <i>Trails</i> tab. We hope you are able to find a trail that best suits your needs for your trip.</p>
+                    <p>Or, search through less-popular trails under the <i>Uncrowded trails</i> tab. For Ontario residents who are hesitant about spending time outdoors in a popular trail, the Uncrowded tab is a frequently-updated list of trails that are less popular. This way, you can spend time outdoors without worrying about spreading COVID-19.</p>
+                    <p>We hope you enjoy!</p> </div>
                 </Route>
                 <Route path='/trails'>
                     <Trail/>

@@ -1,31 +1,37 @@
 
-main {
-    margin: 16px;
-}
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap');
 
 .navbar {
-    display: flex;
+     display: flex; 
     align-items: center;
     color: white;
     font-family: Helvetica;
     background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5) ),url("./images/trail.jpeg");
     min-height: 200px; 
     
+    background-position: center;
+   
+   
+    
 }
+
+
 
 .navbar__title {
     margin-right: auto;
+    font-size: 35px;
     
-    font-size: 150%;
-
+    font-family: 'PT Sans', sans-serif;
     font-weight: bold;
+
+    
 }
 
 .navbar__item {
-    padding: 16px 16px;
+    padding: 16px;
     cursor: pointer;
     vertical-align: middle;
-   
+   font-size: 20px;
 
 
 }
@@ -34,16 +40,22 @@ main {
 color: white;
   text-decoration: none;
  text-align: right;
+ padding: 50px 20px;
+
 
 
 } 
 .button{
+    color: white;
+  text-decoration: none;
+ text-align: right;
     display:inline-block;
     padding: 5px 10px;
-    font-weight:535;
+    font-size: 100%;
+    font-family: 'PT Sans', sans-serif;
     
     color: white;
-    border: 1px solid orange;
+    border: 1px solid rgb(243, 193, 99);
       
 }
 .button:hover,

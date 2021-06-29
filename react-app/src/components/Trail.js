@@ -3,7 +3,7 @@ import MaterialTable from 'material-table';
 
 import TrailRowDetails from './TrailRowDetails';
 
-import "./Trail.css";
+import "./Trails.css";
 
 export const Trail = () => {
     const [data, setData] = useState([]);
