@@ -12,6 +12,11 @@ app.use(express.json());
 
 const API_V1_ROOT = "/api/v1";
 
+const reducedData = data.map(({OGF_ID, TRAIL_NAME, TRAIL_ASSOCIATION, TRAIL_ASSOCIATION_WEBSITE, ACTIVITY, LENGTH_KMS}) => {
+    return {
+        OGF_ID, TRAIL_NAME, TRAIL_ASSOCIATION, TRAIL_ASSOCIATION_WEBSITE, ACTIVITY, LENGTH_KMS
+    }
+});
 
 app.get(`${API_V1_ROOT}/trails/:id`, (req, res) => {
     const id = parseInt(req.params.id);
@@ -24,7 +29,8 @@ app.get(`${API_V1_ROOT}/trails/:id`, (req, res) => {
 
 
 app.get(`${API_V1_ROOT}/trails`, (_, res) => {
-    return res.json(data).status(200);
+    //return res.json(data).status(200);
+    return res.json(reducedData).status(200);
 });
 
 
