@@ -22,3 +22,12 @@ npm start
 
 ## Heroku Production
 Two Heroku apps are used, one for the React application, and one for the REST API. 
+
+## Acknowledgements
+
+- [jennifer.yu.canada@gmail.com](jennifer.yu.canada@gmail.com)
+- [a256liu@uwaterloo.ca](a256liu@uwaterloo.ca)
+- [labibaiqbal05@gmail.com](labibaiqbal05@gmail.com)
+- [shailikadakia@gmail.com](shailikadakia@gmail.com)
+- [zhaojialiangvincent@gmail.com](zhaojialiangvincent@gmail.com)
+- [divjot@replic.ca](divjot@replic.ca)
